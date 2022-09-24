@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 1px solid #000;
+            float: left;
+            width: 100px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px; 
+            cursor: pointer;   
+        }
+        nav{
+            margin: 200px 0 0 100px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="box1">首页</div>
+        <div class="box2">购买</div>
+        <div class="box3">其他</div>
+        <div class="box4">个人</div>
+    </nav>
+    <script>
+        var box1=document.querySelector('.box1')
+        var box2=document.querySelector('.box2')
+        var box3=document.querySelector('.box3')
+        var box4=document.querySelector('.box4')
+
+        
+        box1.onclick=a
+        box2.onclick=a
+        box3.onclick=a
+        box4.onclick=a
+        
+        function a(){
+            box1.style.background=''
+            box2.style.background=''
+            box3.style.background=''
+            box4.style.background=''
+            this.style.background='aqua'
+        }
+    </script>
+
+</body>
+</html>

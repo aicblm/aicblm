@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    
+    .kz{
+        
+        width: 500px;
+        height: 500px;
+        /* border: 1px solid #000; */
+    }
+    .d2{
+        display: none;
+    }
+    a{
+        text-decoration: none;
+        float: left;
+        display: block;
+        background-color: aquamarine;
+        width: 60px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+    }
+    #box1{
+        background-color: aqua;
+        height: 40px;
+        border-bottom: 1px solid #000;
+    }
+    #box2{
+        display: block;
+    }
+    
+    img{
+        width: 200px;
+        height: 200px;
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+</style>
+<body>
+    <div class="kz">
+        <div id="box1">
+            <a id="an1" href="#">M</a>
+            <a id="an2" href="#">WY</a>
+            <a id="an3" href="#">HB</a>
+            <a id="an4" href="#">BZ</a>
+            <a id="an5" href="#">ZT</a>
+        </div>
+        <div id="box2" class="d2">
+            <img src="img/w1.png">
+            <img src="img/w2.png">
+            <img src="img/w3.png">
+            <img src="img/w4.png">
+        </div>
+        <div id="box3" class="d2">
+            <img src="img/w5.png">
+            <img src="img/w6.png">
+            <img src="img/w7.png">
+            <img src="img/w8.png">
+        </div>
+        <div id="box4" class="d2">
+            <img src="img/w9.png">
+            <img src="img/w10.png">
+            <img src="img/w11.png">
+            <img src="img/w12.png">
+        </div>
+        <div id="box5" class="d2">
+            <img src="img/w13.png">
+            <img src="img/w4.png">
+            <img src="img/w15.png">
+            <img src="img/w16.png">
+        </div>
+        <div id="box6" class="d2">
+            <img src="img/w17.png">
+            <img src="img/w18.png">
+            <img src="img/w19.png">
+            <img src="img/w20.png">
+        </div>
+    </div>
+    
+</body>
+<script>
+    var o1=document.getElementById('an1')
+    var o2=document.getElementById('an2')
+    var o3=document.getElementById('an3')
+    var o4=document.getElementById('an4')
+    var o5=document.getElementById('an5')
+
+    var oA=document.getElementById('box2')
+    var oB=document.getElementById('box3')
+    var oC=document.getElementById('box4')
+    var oD=document.getElementById('box5')
+    var oE=document.getElementById('box6')
+
+    o1.onclick=function(){
+        oA.style.display='block'
+        oB.style.display='none'
+        oC.style.display='none'
+        oD.style.display='none'
+        oE.style.display='none'
+    }
+    o2.onclick=function(){
+        oA.style.display='none'
+        oB.style.display='block'
+        oC.style.display='none'
+        oD.style.display='none'
+        oE.style.display='none'
+    }
+    o3.onclick=function(){
+        oA.style.display='none'
+        oB.style.display='none'
+        oC.style.display='block'
+        oD.style.display='none'
+        oE.style.display='none'
+    }
+    o4.onclick=function(){
+        oA.style.display='none'
+        oB.style.display='none'
+        oC.style.display='none'
+        oD.style.display='block'
+        oE.style.display='none'
+    }
+    o5.onclick=function(){
+        oA.style.display='none'
+        oB.style.display='none'
+        oC.style.display='none'
+        oD.style.display='none'
+        oE.style.display='block'
+    }
+</script>
+</html>

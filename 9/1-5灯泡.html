@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       div{
+        margin: 100px 0 0 100px;
+       }
+    </style>
+</head>
+<body>
+    <div>
+<img id="dp"src="dp1.gif"> 
+<button id="kd">开灯</button>
+<button id="gd">关灯</button>
+    </div>
+<!-- style="text-align:center; -->
+    <script>
+         document.getElementById('kd').onclick=function(){
+        onclick=document.getElementById('dp').src='dp2.gif'
+        }
+        document.getElementById('gd').onclick=function(){
+            onclick=document.getElementById('dp').src='dp1.gif'
+        }
+    </script>
+
+    
+</body>
+</html>
